@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="lang" content="en"> -->
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ec442f18db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#news">News</a></li>
+                <li><a href="#application">Application</a></li>
+                <li><a href="#contactus">Contact us</a></li>
+                <li><a href="#dbn">DBN</a></li>
+                <li><a href="#cnn">CNN</a></li>
+                <li><a href="#ensemble">Ensemble</a></li>
+
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Bimodal</p>
+            <h1>Hi , I'm <span>Parkinson Disease Detection</span><br> from India</h1> 
+        </div>
+    </div>
+
+</div>
+<!--- ----------About----------->
+<div id="About">
+    <div class="container">
+       <div class="row">
+        <div class="about-col-1">
+            <img src="images/image2.png">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am Sumant Kulkarni, a fourth-year Computer Science and Engineering undergraduate at PES University.Highly motivated and passionate fresher, seeking to contribute dedication,perfection,and strategic 
+            thinking to a challenging organization, eager to excel and make impactful contributions.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>C</span><br></li>
+                    <li><span>C++</span><br></li>
+                    <li><span>Machine Learning</span><br></li>
+                    <li><span>MySQL</span><br></li>
+                    <li><span>Java</span><br></li>
+                    <li><span>Blockchain</span><br></li>
+                    <li><span>Python</span><br></li>
+                    <li><span>MERN Stack</span><br></li>
+                    <li><span>Figma</span><br></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>06/2022-08/2022</span><br>Machine Learning Intern at SkillVertex
+                        Summer Intern, SkillVertex, Bangalore June 2022 - Aug 2022
+                        SkillVertex - A leading company known for exceptional training programs, combining top-tier education with practical 
+                        experience to excel in the industry.
+                         What was the key role you play - Led customer churn prediction ML project achieving 94% accuracy through Random 
+                        Forest, K-NN, and Decision Tree models with SMOTE for imbalanced data, contributing to business retention 
+                        strategies.
+                         What was the key impact of this role - Significantly improved customer retention rates by achieving 94% accuracy in 
+                        predicting churn, resulting in increased profitability and customer satisfaction.
+                         What other role did you play - Demonstrated expertise by deploying Random Forest, K-NN, and Decision Tree 
+                        models, showcasing adaptability and model comparison skills.
+                         What impact did this role have - Strengthened the organization's data analytics capabilities and decision-making 
+                        processes through the application of diverse machine learning models.
+
+                        Professional Recognition
+                         Received recognition for expertise in ML and data preprocessing, enhancing career prospects and securing interview 
+                        opportunities.
+                         Received certificates from the company.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Degree</span><br>PES University, E-City, Bengaluru
+                        Autonomous University
+                        Pursuing Bachelor of Technology in Computer Science
+                        Current Cgpa - 8.14
+                        </li>
+                    <li><span>2020 Intermediate</span><br>Shree Guru PU College 
+                        Stream-PCMB 
+                        KSEEB (PU Board)-92.16%
+                        KCET rank- 6030
+                        COMEDK UGET 2020 rank - 
+                        JEE MAIN 2020 percentile - 79.1
+                    </li>
+                    <li><span>School</span><br>DAV Public School 
+                        CBSE Board - 7.26 CGPA</li>
+                    
+                    
+                </ul>
+            </div>
+            </div>
+        </div>
+
+       </div>
+    </div>
+</div>
+
+<!---------services------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Machine Learning</h2>
+                <p> Including model development, deployment, 
+                    and data preprocessing.</p>
+                <a href ='#'>Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>Full-Stack Development</h2>
+                <p> Proficiency in MERN 
+                    (MongoDB, Express, React, Node.js) stack.</p>
+                <a href ='#' target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Database Management</h2>
+                <p> Integrating MongoDB for efficient 
+                    database management.</p>
+                <a href ='#'>Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/1.png">
+                <div class="layer">
+                    <h3>Machine Learning Internship
+                        Certificate</h3>
+                    <p>Received Certificate from SkillVertex Company</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/2.png">
+                <div class="layer">
+                    <h3>A Beginner's Guide to Linux 
+                        Kernel Development</h3>
+                    <p>A Beginner's Guide to Linux Kernel Development (LFD103)</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/3.png">
+                <div class="layer">
+                    <h3>Agile Virtual Experience 
+                        Program</h3>
+                    <p>Received Certificate from JP Morgan Chase & Co</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+
+</div>
+<!------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>sumantkulkarni2001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9353205042</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sumant-kulkarni-955b46246/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sumantkulkarn"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="images/Sumant's resume.pdf" download class="btn btn2">Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required autocomplete="name">
+                    <input type="email" name="Email" placeholder="Your Email" required autocomplete="email">
+                    <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>  
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 by Sumant Kulkarni| All Rights Reserved.</p>
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbye9M_sWLHnvNAtxcSHz5Btym1WJh-IbnG4n4_ZTiDdUquqxQRzFFBpR-yq-VSnpsGP/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""   
+        },5000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+
+
+
+</body>
+</html>
